@@ -1,6 +1,6 @@
 import Character from '../app';
 
-test('create Character ok', () => {
+test('create Swordsman ok', () => {
   const character = new Character('Harry', 'Swordsman');
   const result = {
     name: 'Harry',
@@ -10,5 +10,5 @@ test('create Character ok', () => {
     attack: 40,
     defence: 10,
   };
-  expect(character).toMatchObject(result);
+  expect(character).toBe(result);
 });
