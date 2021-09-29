@@ -1,7 +1,7 @@
-import Character from '../app';
+import Zombie from '../Zombie.js';
 
 test('create Zombie ok', () => {
-  const character = new Character('Harry', 'Zombie');
+  const character = new Zombie('Harry', 'Zombie');
   const result = {
     name: 'Harry',
     type: 'Zombie',
@@ -10,5 +10,5 @@ test('create Zombie ok', () => {
     attack: 40,
     defence: 10,
   };
-  expect(character).toBe(result);
+  expect(character).toEqual(result);
 });

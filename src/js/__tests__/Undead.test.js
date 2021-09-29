@@ -1,7 +1,7 @@
-import Character from '../app';
+import Undead from '../Undead.js';
 
 test('create Undead ok', () => {
-  const character = new Character('Harry', 'Undead');
+  const character = new Undead('Harry', 'Undead');
   const result = {
     name: 'Harry',
     type: 'Undead',
@@ -10,5 +10,5 @@ test('create Undead ok', () => {
     attack: 25,
     defence: 25,
   };
-  expect(character).toBe(result);
+  expect(character).toEqual(result);
 });

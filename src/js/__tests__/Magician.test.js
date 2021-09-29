@@ -1,7 +1,7 @@
-import Character from '../app';
+import Magician from '../Magician.js';
 
 test('create Magician ok', () => {
-  const character = new Character('Harry', 'Magician');
+  const character = new Magician('Harry', 'Magician');
   const result = {
     name: 'Harry',
     type: 'Magician',
@@ -10,5 +10,5 @@ test('create Magician ok', () => {
     attack: 10,
     defence: 40,
   };
-  expect(character).toBe(result);
+  expect(character).toEqual(result);
 });

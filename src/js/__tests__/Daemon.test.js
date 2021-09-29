@@ -1,7 +1,7 @@
-import Character from '../app';
+import Daemon from '../Daemon.js';
 
 test('create Daemon ok', () => {
-  const character = new Character('Harry', 'Daemon');
+  const character = new Daemon('Harry', 'Daemon');
   const result = {
     name: 'Harry',
     type: 'Daemon',
@@ -10,5 +10,5 @@ test('create Daemon ok', () => {
     attack: 10,
     defence: 40,
   };
-  expect(character).toBe(result);
+  expect(character).toEqual(result);
 });

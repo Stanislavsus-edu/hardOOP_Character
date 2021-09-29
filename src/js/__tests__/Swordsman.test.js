@@ -1,7 +1,7 @@
-import Character from '../app';
+import Swordsman from '../Swordsman.js';
 
 test('create Swordsman ok', () => {
-  const character = new Character('Harry', 'Swordsman');
+  const character = new Swordsman('Harry', 'Swordsman');
   const result = {
     name: 'Harry',
     type: 'Swordsman',
@@ -10,5 +10,5 @@ test('create Swordsman ok', () => {
     attack: 40,
     defence: 10,
   };
-  expect(character).toBe(result);
+  expect(character).toEqual(result);
 });
